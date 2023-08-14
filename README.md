@@ -35,6 +35,11 @@ Usage:
 `vackup load IMAGE VOLUME`
   Copies /volume-data contents from an image to a volume
 
+``` use save by image
+docker save image-name > image-name.tar 
+  cat image-name.tar | docker load 
+```
+
 ## Install
 
 Download the `vackup` file in this repository to your local machine in your shell path and make it executable.
